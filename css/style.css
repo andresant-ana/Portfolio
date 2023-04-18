@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #affc41;
+    --cor-hover: #272727;
+    
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 0% 0 0% 15%;
+    background-color: var(--cor-terciaria);
+}
+
+.cabecalho nav {
+    display: flex;
+    gap: 10px;
+}
+
+.cabecalho nav a {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    padding: 30px 5px 30px 5px;
+}
+
+.cabecalho nav a:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao img {
+    max-width: 600px;
+    max-height: 715px;
+    border-radius: 16px;
+}
+
+.apresentacao section {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao h1 {
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao h2 {
+    font-size: 20px;
+    font-family: var(--fonte-primaria);
+    font-weight: 150;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao p {
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao div h2 {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.link_social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.link_social:hover {
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
